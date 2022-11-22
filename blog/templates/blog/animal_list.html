@@ -1,0 +1,51 @@
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="separation">
+<h2>Animaux</h2>
+<h2>Equipements</h2>
+</div>
+
+<div class="separation">
+
+    <div class="container">
+        {% for animal in animaux %}
+        <div>
+            <div class="sous-container">
+                <div class="photo">
+                    <img src={{animal.photo}} width="200" height="200">
+                </div>
+                <div class="Nom">{{ animal }}</div>
+                <div class="Etat">{{ animal.etat }} {{ animal.lieu }}</div>
+                <footer>
+                    <a href="{% url 'animal_detail' id_animal=animal.id_animal %}">Plus de détails</a>
+                </footer>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="container">
+        {% for equipement in equipements %}
+        <div>
+            <div class="sous-container">
+                <div class="photo">
+                    <img src={{equipement.photo}} width="200" height="200">
+                </div>
+                <div class="Nom">{{ equipement }}</div>
+                {% if equipement.disponibilite == 'libre' %}
+                    <div class="Disponibilité_libre">{{ equipement.disponibilite}}</div>
+                {% else %}
+                    <div class="Disponibilité_occupe">{{ equipement.disponibilite}}</div>
+                {% endif %}
+                <footer>
+                    <a href="{% url 'equipement_detail' id_equip=equipement.id_equip %}">Plus de détails</a>
+                </footer>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

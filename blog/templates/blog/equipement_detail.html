@@ -1,0 +1,24 @@
+
+
+{% extends 'blog/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="animal">
+    <h2 class='titre_animal'>{{ equipement.id_equip }}</h2>
+    <div class="photo_detail">
+        <img src="/{{equipement.photo}}" width="300" height="300">
+    </div>
+    {% if equipement.disponibilite == 'libre' %}
+    <div class="Disponibilité_libre_bis"> disponibilite : {{ equipement.disponibilite}}</div>
+    {% else %}
+    <div class="Disponibilité_occupe_bis"> disponibilite : {{ equipement.disponibilite}}</div>
+    <div class="occupant"> par {{ animal }} </div>
+    {% endif %}
+
+</div>
+
+<div class='back_bis'><a href="{% url 'animal_list' %}">Back</a></div>
+
+{% endblock %}

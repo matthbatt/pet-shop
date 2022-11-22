@@ -1,0 +1,243 @@
+
+
+
+
+body {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 180px;
+    background-color: rgb(238, 230, 216);
+}
+
+.container > div {
+    border-radius: 1px;
+    border-color: rgb(118, 171, 58);
+    padding: 10px 0;
+    background-color: rgb(118,171, 58);
+}
+
+.separation {
+    display: grid;
+    grid-template-columns: 550px 550px;
+    grid-gap: 20px;
+    padding: 5px 0;
+}
+
+h2 {
+    text-align: center;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 260px 260px;
+    grid-auto-rows: 285px;
+    grid-gap: 15px;
+}
+
+.sous-container {
+    display: grid;
+    grid-auto-rows: 20px;
+    grid-gap: 15px;
+    text-align: center;
+}
+
+.photo {
+    grid-column: 1 / 16;
+    grid-row: 1;
+}
+
+.Etat {
+    border-radius: 5px;
+    background-color: rgb(113, 114, 128);
+    color: #fafdfd;
+    grid-column: 8 / 14;
+    grid-row: 7;
+}
+
+.Nom {
+    grid-column: 3 / 8;
+    grid-row: 7;
+}
+
+.Disponibilité_libre {
+    border-radius: 5px;
+    background-color: rgb(13, 199, 13);
+    color: #fafdfd;
+    grid-column: 8 / 14;
+    grid-row: 7;
+}
+
+.Disponibilité_occupe {
+    border-radius: 5px;
+    background-color: rgb(211, 11, 11);
+    color: #fafdfd;
+    grid-column: 8 / 14;
+    grid-row: 7;
+}
+
+
+footer {
+    border-radius: 5px;
+    background-color: rgb(45, 48, 95);
+    color: #fafdfd;
+    grid-column: 5 / 13;
+    grid-row: 8;
+}
+
+a {
+    color: #fafdfd;
+}
+
+h1 {
+    background-color: rgb(182, 115, 50);
+    color: cornsilk;
+    padding: 50px 20px 20px 50px;
+    width: 1035px;
+}
+
+.message {
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom,#f2dede 0,#e7c3c3 100%);
+    background-repeat: repeat-x;
+    border-color: #dca7a7;
+    height: 40px;
+    padding: 10px 5px;
+    margin: 25px 0;
+}
+
+.texte-message {
+    line-height: 37px;
+    font-weight: bold;
+    margin: 0 7px;
+}
+
+.back {
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: 10px 5px;
+    margin: 20px 0;
+    background-color: rgb(218, 171, 58);
+    width: 50;
+    text-align: center;
+}
+
+.animal {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    padding: 20px 0;
+    margin: 0px 100px;
+    background-color: rgb(118,171, 58);
+    width: 905px
+}
+
+.titre_animal {
+    grid-column: 2;
+    grid-row: 1;
+    text-align: center;
+}
+
+
+.description {
+    display: grid;
+    grid-column: 3;
+    grid-row: 3;
+    border-radius: 5px;
+    margin: 50px;
+}
+
+.photo_detail {
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.etat_detail {
+    grid-row: 1;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: #706d6d;
+    padding: 3px 5px;
+    margin: 5px 0;
+    width: 110;
+    height: 20;
+}
+
+.type_detail {
+    grid-row: 2;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: #706d6d;
+    padding: 3px 5px;
+    margin: 5px 0;
+    width: 110;
+    height: 20;
+}
+
+.race_detail {
+    grid-row: 3;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: #706d6d;
+    padding: 3px 5px;
+    margin: 5px 0;
+    width: 110;
+    height: 20;
+}
+
+.lieu_detail {
+    grid-row: 4;
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    background-color: #706d6d;
+    padding: 3px 5px;
+    margin: 5px 0;
+    width: 110;
+    height: 20;
+}
+
+.centrer {
+    margin: 25px 450;
+}
+
+
+.Disponibilité_libre_bis {
+    border-radius: 5px;
+    background-color: rgb(13, 199, 13);
+    color: #fafdfd;
+    grid-column: 2;
+    grid-row: 6;
+    margin: 5px 85px;
+    padding: 3px;
+}
+
+.Disponibilité_occupe_bis {
+    border-radius: 5px;
+    background-color: rgb(211, 11, 11);
+    color: #fafdfd;
+    grid-column: 2;
+    grid-row: 6;
+    margin: 5px 75px;
+    padding: 3px;
+}
+
+.back_bis {
+    border-radius: 5px;
+    border-color: rgb(255, 255, 255);
+    padding: 10px 5px;
+    margin: 20px 100px;
+    background-color: rgb(218, 171, 58);
+    width: 50;
+    text-align: center;
+}
+
+.occupant {
+    border-radius: 5px;
+    background-color: #706d6d;
+    color: #fafdfd;
+    grid-column: 2;
+    grid-row: 7;
+    margin: 5px 75px;
+    padding: 3px;
+    text-align: center;
+}
+
